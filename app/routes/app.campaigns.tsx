@@ -20,8 +20,7 @@ import { SunIcon } from '@shopify/polaris-icons';
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   await authenticate.admin(request);
 
-  // In a real app, you would fetch the campaigns from your database here
-  const campaigns = [];
+  const campaigns: any[] = [];
 
   return json({ campaigns });
 };
@@ -35,14 +34,14 @@ export default function CampaignsPage() {
   };
 
   return (
-    <Page fullWidth>
-      <TitleBar 
-        title="Campaigns" 
-        primaryAction={
-          <Button onClick={handleCreateCampaign} primary>Create Campaign</Button>
-        }
-      />
-      <Layout>
+    <Page
+  fullWidth
+  title="Campaigns"
+  primaryAction={
+    <Button onClick={handleCreateCampaign} variant="primary">Create Campaign</Button>
+  }
+>
+  <Layout>
         <Layout.Section>
           <div style={{ background: '#f4f6f8', padding: '2rem', borderRadius: '0.5rem' }}>
             {campaigns.length === 0 ? (
@@ -88,7 +87,7 @@ export default function CampaignsPage() {
               width: '32px',
               height: '32px'
             }}>
-              <Icon source={SunIcon} color="base" />
+              <Icon source={SunIcon} tone="base" />
             </div>
             <Text as="p" variant="bodyMd">
               Use a <Text as="span" fontWeight="bold">countdown timer</Text> to create urgency. Make it visually appealing and on-brand to boost conversions!
