@@ -3,7 +3,7 @@
 client_id = "2b0af67cd6c949dc31bdfe5970340630"
 name = "bogo-mvp"
 handle = "bogo-mvp"
-application_url = "https://antibodies-pack-lafayette-less.trycloudflare.com"
+application_url = "https://rs-closing-something-wiki.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://antibodies-pack-lafayette-less.trycloudflare.com/auth/callback",
-  "https://antibodies-pack-lafayette-less.trycloudflare.com/auth/shopify/callback",
-  "https://antibodies-pack-lafayette-less.trycloudflare.com/api/auth/callback"
+  "https://rs-closing-something-wiki.trycloudflare.com/auth/callback",
+  "https://rs-closing-something-wiki.trycloudflare.com/auth/shopify/callback",
+  "https://rs-closing-something-wiki.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

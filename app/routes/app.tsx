@@ -26,6 +26,7 @@ export default function App() {
           Home
         </Link>
         <Link to="/app/campaigns">Campaigns</Link>
+        <Link to="/app/campaigns/new">Create Campaign</Link>
         <Link to="/app/bogo">BOGO Rules</Link>
       </NavMenu>
       <Outlet />
